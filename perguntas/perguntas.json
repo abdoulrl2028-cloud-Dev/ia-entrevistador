@@ -1,0 +1,264 @@
+{
+  "perguntas": [
+    {
+      "id": 1,
+      "categoria": "Programação Básica",
+      "dificuldade": "basico",
+      "pergunta": "O que é uma variável em programação?",
+      "resposta": "Uma variável é um espaço na memória do computador que armazena um valor. Ela tem um nome único que a identifica e pode ser usada para guardar dados de diferentes tipos como números, textos ou valores booleanos.",
+      "dicas": [
+        "Mencione que é um container de dados",
+        "Explique sobre identificadores únicos",
+        "Fale sobre diferentes tipos de dados"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 2,
+      "categoria": "Programação Básica",
+      "dificuldade": "basico",
+      "pergunta": "Qual é a diferença entre compilação e interpretação?",
+      "resposta": "Compilação é quando o código-fonte é traduzido para linguagem de máquina antes da execução. Interpretação é quando o código é traduzido durante a execução, linha por linha. Linguagens compiladas (C, C++) são geralmente mais rápidas, enquanto interpretadas (Python, JavaScript) são mais flexíveis.",
+      "dicas": [
+        "Fale sobre timing da tradução",
+        "Cite exemplos de linguagens compiladas e interpretadas",
+        "Mencione vantagens e desvantagens de cada uma"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 3,
+      "categoria": "Programação Básica",
+      "dificuldade": "basico",
+      "pergunta": "O que é um algoritmo?",
+      "resposta": "Um algoritmo é um conjunto de passos bem definidos e sequenciais para resolver um problema ou realizar uma tarefa. Deve ter entrada, processamento e saída clara. Um bom algoritmo é eficiente, correto e fácil de entender.",
+      "dicas": [
+        "Mencione sequência de passos",
+        "Dê exemplos do dia a dia como receita ou direções",
+        "Fale sobre critérios de um bom algoritmo"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 4,
+      "categoria": "Estruturas de Dados",
+      "dificuldade": "basico",
+      "pergunta": "O que é um array (vetor)?",
+      "resposta": "Um array é uma estrutura de dados que armazena múltiplos elementos do mesmo tipo em posições contíguas da memória. Cada elemento é acessível por um índice, geralmente começando do 0. Arrays podem ter tamanho fixo ou dinâmico dependendo da linguagem.",
+      "dicas": [
+        "Explique sobre indexação começando em 0",
+        "Mencione tamanho fixo ou dinâmico",
+        "Fale sobre acesso aleatório aos elementos"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 5,
+      "categoria": "Lógica de Programação",
+      "dificuldade": "basico",
+      "pergunta": "O que é uma condição if-else?",
+      "resposta": "É uma estrutura de controle que permite executar diferentes blocos de código baseado em uma expressão condicional. Se a condição é verdadeira, executa o bloco if; senão, executa o bloco else. É fundamental para criar lógica ramificada.",
+      "dicas": [
+        "Mencione expressões booleanas",
+        "Explique fluxo de controle",
+        "Dê exemplo com pseudocódigo ou código real"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 6,
+      "categoria": "Lógica de Programação",
+      "dificuldade": "basico",
+      "pergunta": "Explique o que é um loop (laço de repetição)?",
+      "resposta": "Um loop é uma estrutura que permite repetir um bloco de código enquanto uma condição for verdadeira. Os tipos principais são for (número fixo de repetições) e while (repetição condicional). Loops são essenciais para processar coleções de dados.",
+      "dicas": [
+        "Mencione tipos: for e while",
+        "Explique quando usar cada um",
+        "Fale sobre condição de parada"
+      ],
+      "pontos": 10
+    },
+    {
+      "id": 7,
+      "categoria": "Estruturas de Dados",
+      "dificuldade": "intermediario",
+      "pergunta": "Explique como funciona uma pilha (stack)?",
+      "resposta": "Uma pilha é uma estrutura LIFO (Last In, First Out - Último a Entrar, Primeiro a Sair). Elementos são inseridos e removidos pelo topo. Operações principais são push (adicionar) e pop (remover). Exemplos: histórico de navegação, undo/redo.",
+      "dicas": [
+        "Use analogia com pilha de pratos",
+        "Explique LIFO claramente",
+        "Cite exemplos práticos de uso"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 8,
+      "categoria": "Estruturas de Dados",
+      "dificuldade": "intermediario",
+      "pergunta": "O que é uma fila (queue) e como difere de uma pilha?",
+      "resposta": "Uma fila é FIFO (First In, First Out - Primeiro a Entrar, Primeiro a Sair). Operações: enqueue (adicionar ao final) e dequeue (remover do início). Diferencia de pilha pela ordem: na fila, o primeiro elemento adicionado é o primeiro removido, no oposto da pilha.",
+      "dicas": [
+        "Compare com filas do mundo real",
+        "Explique FIFO vs LIFO",
+        "Cite exemplos como fila de banco ou impressora"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 9,
+      "categoria": "Algoritmos",
+      "dificuldade": "intermediario",
+      "pergunta": "Qual é a diferença entre busca linear e busca binária?",
+      "resposta": "Busca linear: verifica cada elemento sequencialmente, complexidade O(n). Busca binária: divide o espaço de busca pela metade repetidamente, complexidade O(log n). Busca binária é muito mais rápida mas requer dados previamente ordenados.",
+      "dicas": [
+        "Mencione complexidade de tempo",
+        "Explique pré-requisitos da busca binária",
+        "Compare em termos de eficiência"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 10,
+      "categoria": "Algoritmos",
+      "dificuldade": "intermediario",
+      "pergunta": "O que é recursão? Dê um exemplo prático.",
+      "resposta": "Recursão é quando uma função chama a si mesma para resolver um problema dividindo-o em subproblemas menores. Deve ter caso base (parada) e caso recursivo. Exemplos: fatorial, Fibonacci, busca em árvore. Cuidado com stack overflow.",
+      "dicas": [
+        "Mencione importância do caso base",
+        "Cite exemplos como fatorial ou Fibonacci",
+        "Fale sobre riscos como recursão infinita"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 11,
+      "categoria": "Algoritmos",
+      "dificuldade": "intermediario",
+      "pergunta": "Explique o conceito de complexidade de tempo e espaço.",
+      "resposta": "Complexidade de tempo mede quantas operações um algoritmo executa em função do tamanho da entrada. Complexidade de espaço mede quanto de memória usa. Usa-se Big O para descrever: O(1) constante, O(n) linear, O(n²) quadrática, O(log n) logarítmica, O(n log n) linearítmica.",
+      "dicas": [
+        "Explique notação Big O",
+        "Dê exemplos de cada complexidade",
+        "Mencione trade-offs entre tempo e espaço"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 12,
+      "categoria": "Paradigmas",
+      "dificuldade": "avancado",
+      "pergunta": "Explique os princípios SOLID de design de software.",
+      "resposta": "SOLID são 5 princípios: S-Responsabilidade Única (uma classe, um propósito), O-Aberto/Fechado (aberto para extensão, fechado para modificação), L-Substituição de Liskov (subclasses devem ser substituíveis), I-Segregação de Interface (interfaces específicas), D-Inversão de Dependência (depender de abstrações). Esses princípios promovem código limpo e manutenível.",
+      "dicas": [
+        "Explique cada princípio brevemente",
+        "Dê exemplos de violação de cada um",
+        "Mencione benefícios para manutenção"
+      ],
+      "pontos": 20
+    },
+    {
+      "id": 13,
+      "categoria": "Design Patterns",
+      "dificuldade": "avancado",
+      "pergunta": "O que é o padrão Singleton? Quando usar?",
+      "resposta": "Singleton garante que uma classe tenha apenas uma instância global. Implementado com construtor privado e método estático getInstance(). Usar quando precisa de um ponto único de acesso. Exemplos: Logger, Database Connection, Configuration Manager. Cuidado em ambientes multi-thread.",
+      "dicas": [
+        "Explique problema que resolve",
+        "Cite exemplos de uso comum",
+        "Mencione cuidados com thread-safety"
+      ],
+      "pontos": 20
+    },
+    {
+      "id": 14,
+      "categoria": "Design Patterns",
+      "dificuldade": "avancado",
+      "pergunta": "Explique o padrão Factory e sua vantagem.",
+      "resposta": "Factory é um padrão criacional que define uma interface para criar objetos, deixando as subclasses decidirem qual classe instanciar. Vantagens: desacoplamento entre cliente e classes concretas, centraliza criação de objetos, facilita manutenção. Exemplo: DatabaseFactory cria diferentes tipos de conexões.",
+      "dicas": [
+        "Explique como desacopla código",
+        "Cite vantagens para manutenção",
+        "Dê exemplos reais de uso"
+      ],
+      "pontos": 20
+    },
+    {
+      "id": 15,
+      "categoria": "Otimização",
+      "dificuldade": "avancado",
+      "pergunta": "Como você otimizaria uma aplicação lenta?",
+      "resposta": "Processo: 1) Identificar gargalos com ferramentas de profiling, 2) Otimizar algoritmos (Big O), 3) Implementar cache, 4) Usar paralelização quando possível, 5) Otimizar memória (evitar vazamentos), 6) Database indexing e queries, 7) Testar e medir resultados. Priorize pelos maiores ganhos.",
+      "dicas": [
+        "Mencione ferramentas de profiling",
+        "Fale sobre trade-offs nas otimizações",
+        "Cite abordagem de bottom-up"
+      ],
+      "pontos": 20
+    },
+    {
+      "id": 16,
+      "categoria": "Programação Orientada a Objetos",
+      "dificuldade": "intermediario",
+      "pergunta": "O que é encapsulamento em OOP?",
+      "resposta": "Encapsulamento é ocultar detalhes internos de uma classe, expondo apenas interfaces públicas. Implementado com modificadores de acesso (private, protected, public). Benefícios: controle de acesso, facilita manutenção, reduz dependências externas, permite mudanças internas sem afetar código externo.",
+      "dicas": [
+        "Mencione modificadores de acesso",
+        "Explique benefícios de ocultar implementação",
+        "Dê exemplo com getters e setters"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 17,
+      "categoria": "Programação Orientada a Objetos",
+      "dificuldade": "intermediario",
+      "pergunta": "Explique herança em OOP.",
+      "resposta": "Herança permite que uma classe (subclasse) herde propriedades e métodos de outra classe (superclasse). Promove reutilização de código e estabelece relação \"é um\". Hierarquia permite organizar conceitos do geral para específico. Cuidado com herança profunda ou múltipla.",
+      "dicas": [
+        "Explique relação \"é um\"",
+        "Mencione reutilização de código",
+        "Fale sobre problemas de herança profunda"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 18,
+      "categoria": "Programação Orientada a Objetos",
+      "dificuldade": "intermediario",
+      "pergunta": "O que é polimorfismo?",
+      "resposta": "Polimorfismo permite que objetos de diferentes tipos respondam ao mesmo comando. Tipos: sobrecarga (mesma função, parâmetros diferentes) e sobrescrita (subclasse redefine método da superclasse). Permite código flexível que trabalha com diferentes tipos através de interface comum.",
+      "dicas": [
+        "Mencione sobrecarga e sobrescrita",
+        "Explique benefícios de código flexível",
+        "Dê exemplo prático com animais fazendo som"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 19,
+      "categoria": "Banco de Dados",
+      "dificuldade": "intermediario",
+      "pergunta": "Explique o que é uma chave primária.",
+      "resposta": "Chave primária é um atributo (ou conjunto) que identifica unicamente cada registro em uma tabela. Propriedades: única (sem duplicatas), não nula (always has a value), imutável (não muda). Essencial para relacionamentos entre tabelas. Exemplo: ID do usuário.",
+      "dicas": [
+        "Mencione unicidade e não-nulidade",
+        "Fale sobre identificação única",
+        "Cite exemplos de chaves primárias"
+      ],
+      "pontos": 15
+    },
+    {
+      "id": 20,
+      "categoria": "Banco de Dados",
+      "dificuldade": "avancado",
+      "pergunta": "O que é normalização em banco de dados?",
+      "resposta": "Normalização é processo de organizar dados para minimizar redundância e melhorar integridade. Formas normais: 1NF (sem grupos repetidos), 2NF (dependência funcional completa), 3NF (sem dependência transitiva). Benefícios: menos redundância, melhor integridade, facilita manutenção. Trade-off: mais joins necessários.",
+      "dicas": [
+        "Mencione objetivo de evitar redundância",
+        "Explique formas normais brevemente",
+        "Fale sobre trade-offs entre normalização e performance"
+      ],
+      "pontos": 20
+    }
+  ]
+}

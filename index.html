@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Entrevistador - Simulador de Entrevista Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-section">
+                <img src="assets/logo.png" alt="Logo IA Entrevistador" class="logo">
+                <h1>IA Entrevistador</h1>
+            </div>
+            <p class="subtitle">Pratique e melhore suas habilidades de entrevista técnica</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Menu Principal -->
+            <section id="menu-principal" class="section menu-section">
+                <h2>Bem-vindo ao IA Entrevistador</h2>
+                <p>Escolha um nível de dificuldade para começar:</p>
+                
+                <div class="difficulty-buttons">
+                    <button class="btn btn-primary" data-level="basico">
+                        <span class="level-icon">🟢</span>
+                        <strong>Básico</strong>
+                        <small>Conceitos fundamentais</small>
+                    </button>
+                    <button class="btn btn-primary" data-level="intermediario">
+                        <span class="level-icon">🟡</span>
+                        <strong>Intermediário</strong>
+                        <small>Problemas de lógica</small>
+                    </button>
+                    <button class="btn btn-primary" data-level="avancado">
+                        <span class="level-icon">🔴</span>
+                        <strong>Avançado</strong>
+                        <small>Otimização e design</small>
+                    </button>
+                </div>
+
+                <div class="stats-section">
+                    <h3>Suas Estatísticas</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number" id="total-perguntas">0</span>
+                            <span class="stat-label">Perguntas Respondidas</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="pontos-totais">0</span>
+                            <span class="stat-label">Pontos Totais</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" id="taxa-acerto">0%</span>
+                            <span class="stat-label">Taxa de Acerto</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Entrevista -->
+            <section id="entrevista-section" class="section entrevista-section hidden">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <span class="progress-text" id="progress-text">1/10</span>
+                </div>
+
+                <div class="question-container">
+                    <div class="question-header">
+                        <span class="difficulty-badge" id="difficulty-badge">Básico</span>
+                        <span class="category-badge" id="category-badge">Programação</span>
+                    </div>
+
+                    <h2 id="pergunta-titulo" class="pergunta-titulo">Pergunta carregando...</h2>
+                    <p id="pergunta-descricao" class="pergunta-descricao"></p>
+
+                    <div class="answer-section">
+                        <label for="resposta-input">Sua Resposta:</label>
+                        <textarea 
+                            id="resposta-input" 
+                            class="resposta-input" 
+                            placeholder="Digite sua resposta aqui..."
+                            rows="8"
+                        ></textarea>
+
+                        <div class="button-group">
+                            <button id="enviar-resposta" class="btn btn-success">Enviar Resposta</button>
+                            <button id="pular-pergunta" class="btn btn-warning">Pular Pergunta</button>
+                            <button id="sair-entrevista" class="btn btn-danger">Sair da Entrevista</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Feedback -->
+            <section id="feedback-section" class="section feedback-section hidden">
+                <div class="feedback-container">
+                    <h2 id="feedback-titulo">Feedback</h2>
+                    
+                    <div class="score-display">
+                        <div class="score-circle" id="score-circle">
+                            <span class="score-percentage" id="score-percentage">0%</span>
+                        </div>
+                        <p class="feedback-message" id="feedback-message">Parabéns!</p>
+                    </div>
+
+                    <div class="feedback-details">
+                        <div class="feedback-item">
+                            <h3>Pontos Obtidos</h3>
+                            <p id="pontos-obtidos" class="feedback-value">0/10</p>
+                        </div>
+                        <div class="feedback-item">
+                            <h3>Resposta Esperada</h3>
+                            <p id="resposta-esperada" class="feedback-value"></p>
+                        </div>
+                        <div class="feedback-item">
+                            <h3>Dicas de Melhoria</h3>
+                            <ul id="dicas-lista" class="dicas-lista">
+                                <li>Continue praticando</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button id="proxima-pergunta" class="btn btn-primary">Próxima Pergunta</button>
+                </div>
+            </section>
+
+            <!-- Seção de Resultados -->
+            <section id="resultados-section" class="section resultados-section hidden">
+                <div class="resultados-container">
+                    <h2>Entrevista Finalizada!</h2>
+                    
+                    <div class="resultado-final">
+                        <div class="resultado-score">
+                            <span class="resultado-numero" id="resultado-score">0</span>
+                            <span class="resultado-label">Pontos</span>
+                        </div>
+                        <div class="resultado-acertos">
+                            <span class="resultado-numero" id="resultado-acertos">0</span>
+                            <span class="resultado-label">Acertos</span>
+                        </div>
+                        <div class="resultado-taxa">
+                            <span class="resultado-numero" id="resultado-taxa">0%</span>
+                            <span class="resultado-label">Taxa de Acerto</span>
+                        </div>
+                    </div>
+
+                    <div class="resultado-mensagem" id="resultado-mensagem">
+                        Parabéns! Continue praticando.
+                    </div>
+
+                    <div class="analise-detalhada">
+                        <h3>Análise de Categorias</h3>
+                        <div id="categorias-analise" class="categorias-analise"></div>
+                    </div>
+
+                    <button id="novo-teste" class="btn btn-primary">Realizar Novo Teste</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 IA Entrevistador. Desenvolvido com 💚 por Abdoul</p>
+            <p class="footer-version">v1.0.0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

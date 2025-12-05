@@ -1,0 +1,29 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Círculo de fundo -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)" stroke="#fff" stroke-width="3"/>
+  
+  <!-- Símbolos de IA e Entrevista -->
+  <!-- Cérebro/IA -->
+  <circle cx="70" cy="80" r="25" fill="#fff" opacity="0.9"/>
+  <circle cx="60" cy="70" r="8" fill="#2ecc71" opacity="0.7"/>
+  <circle cx="80" cy="70" r="8" fill="#2ecc71" opacity="0.7"/>
+  <circle cx="70" cy="90" r="6" fill="#2ecc71" opacity="0.7"/>
+  
+  <!-- Fala/Entrevista -->
+  <path d="M 130 100 Q 150 85 160 95 L 155 110 Q 140 105 130 115 Z" fill="#fff" opacity="0.9"/>
+  <circle cx="140" cy="110" r="3" fill="#27ae60"/>
+  <circle cx="145" cy="110" r="3" fill="#27ae60"/>
+  <circle cx="150" cy="110" r="3" fill="#27ae60"/>
+  
+  <!-- Texto -->
+  <text x="100" y="155" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial">
+    IA
+  </text>
+</svg>
