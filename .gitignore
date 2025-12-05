@@ -1,0 +1,37 @@
+# Dependências
+node_modules/
+package-lock.json
+yarn.lock
+
+# Arquivos do Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.eslintcache
+
+# Variáveis locais
+*.pid

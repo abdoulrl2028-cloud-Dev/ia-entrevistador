@@ -1,0 +1,7 @@
+{
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": ".",
+  "framework": "static",
+  "public": true,
+  "installCommand": "echo 'Installation skipped'"
+}

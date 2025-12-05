@@ -1,0 +1,26 @@
+{
+  "name": "ia-entrevistador",
+  "version": "1.0.0",
+  "description": "Simulador de Entrevista Técnica com Inteligência Artificial",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 3000",
+    "test": "echo 'No tests configured yet'",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "entrevista",
+    "ia",
+    "educação",
+    "programação",
+    "simulador"
+  ],
+  "author": "Abdoul",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdoulrl2028-cloud-Dev/ia-entrevistador.git"
+  },
+  "homepage": "https://github.com/abdoulrl2028-cloud-Dev/ia-entrevistador"
+}
